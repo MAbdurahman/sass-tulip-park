@@ -1,0 +1,56 @@
+/*=============================================
+          _main-menu.scss
+================================================*/
+#main_menu{
+  flex-basis: 68%;
+  ul{
+    text-align: right;
+    li{
+      position: relative;
+      margin-left: 15px;
+      &::after{
+        content: "";
+        position: absolute;
+        left: 15%;
+        bottom: 0;
+        width: 0%;
+        height: 2px;
+        background: $clr-primary;
+        transition: 0.5s;
+      }
+      &:hover::after{
+        width: 70%;
+      }
+      &:last-child{
+        a{
+          background: $clr-primary;
+          color: $clr-white;
+          border: 2px solid $clr-primary;
+          transition: 0.5s;
+
+          &:hover {
+            color: $clr-primary;
+            background: $clr-white;
+            border: 2px solid $clr-primary;
+          }
+        }
+        &:hover::after {
+          width: 0;
+        }
+      }
+      a{
+        display: block;
+        padding: 10px 20px;
+        color: $clr-black;
+        font: {
+          family:$ff-primary;
+          weight: 600;
+          size: 16px;
+        }
+        i{
+          display: none;
+        }
+      }
+    }
+  }
+}
