@@ -1,14 +1,17 @@
 /*=============================================
           _main-menu.scss
 ================================================*/
-#main_menu{
-  flex-basis: 68%;
-  ul{
+#main_menu {
+  flex-basis: 78%;
+
+  ul {
     text-align: right;
-    li{
+
+    li {
       position: relative;
       margin-left: 15px;
-      &::after{
+
+      &::after {
         content: "";
         position: absolute;
         left: 15%;
@@ -18,11 +21,13 @@
         background: $clr-primary;
         transition: 0.5s;
       }
-      &:hover::after{
+
+      &:hover::after {
         width: 70%;
       }
-      &:last-child{
-        a{
+
+      &:last-child {
+        a {
           background: $clr-primary;
           color: $clr-white;
           border: 2px solid $clr-primary;
@@ -34,20 +39,23 @@
             border: 2px solid $clr-primary;
           }
         }
+
         &:hover::after {
           width: 0;
         }
       }
-      a{
+
+      a {
         display: block;
         padding: 10px 20px;
         color: $clr-black;
         font: {
-          family:$ff-primary;
+          family: $ff-primary;
           weight: 600;
-          size: 16px;
+          size: 14px;
         }
-        i{
+
+        i {
           display: none;
         }
       }
