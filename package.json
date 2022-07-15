@@ -10,6 +10,6 @@
     "scss": "sass scss/main.scss css/main.css --watch --style expanded"
   },
   "devDependencies": {
-    "sass": "1.52.1"
+    "sass": "1.53.0"
   }
 }

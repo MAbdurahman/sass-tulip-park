@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description" content="A simple example of a web application, utilizing SASS.">
     <meta name="keywords" content="SASS, simple SASS architecture website">
@@ -16,9 +16,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
           integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <!-- jquery ui css -->
+    <link rel="stylesheet" href="./css/jquery-ui.min.css"/>
+
+    <!-- slick nav -->
+    <link rel="stylesheet" href="./css/slicknav.min.css"/>
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="./css/normalize.css"/>
+
     <!--main css-->
     <link rel="stylesheet" href="./css/main.css"/>
-
     <title>sass-tulip-park</title>
 
 </head>
@@ -29,18 +37,18 @@
     <div class="top_header">
         <div class="inner content">
             <div class="info">
-                <p><i class="fas fa-map-marker-alt"></i>1234 Main Street, Your City, State, 11234</p>
+                <p><i class="fas fa-map-marker-alt"></i>1234 Main Street, Your City, State</p>
             </div>
             <div class="info center">
                 <p><i class="fas fa-phone"></i> +123-456-7890</p>
             </div>
             <div class="info">
                 <ul class="ul">
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-youtube"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
                 </ul>
             </div>
         </div>
@@ -49,24 +57,42 @@
     <div class="main_header">
         <div class="inner content">
             <div class="logo_area">
-                <a href=""><img src="./img/logo.png" alt="logo"></a>
+                <a href="#"><img src="./img/logo.png" alt="logo"></a>
             </div>
             <nav id="main_menu">
                 <ul class="ul">
-                    <li><a href=""><i class="fas fa-home"></i> Home</a></li>
-                    <li><a href=""><i class="fas fa-user"></i> About Us</a></li>
-                    <li><a href=""><i class="fas fa-cog"></i> Services</a></li>
-                    <li><a href=""><i class="fas fa-envelope"></i> Contact Us</a></li>
-                    <li><a href="">Book Now</a></li>
+                    <li><a href="#"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Services</a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i> Contact</a></li>
+                    <li><a href="#">Book Now</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-
 </header>
 
-<!--jaquery 3.4.1 -->
-<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+<!--hero area-->
+<section id="hero_area">
+    <img src="./img/hero_image.jpg" alt="sofa">
+    <div class="inner_hero">
+        <div class="content">
+            <h2>Stay with us <br>
+                <strong>Feel like</strong> Home.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti laboriosam amet maxime iusto
+                voluptatum velit. Harum, perspiciatis dolor pariatur officia impedit sapiente eos architecto porro!</p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </div>
+</section>
+
+
+<!-- jquery scripts -->
+<script src="./js/jquery-3.4.1.min.js"></script>
+<!-- jquery ui scripts -->
+<script src="./js/jquery-ui.min.js"></script>
+<!-- slick nav scripts -->
+<script src="./js/jquery.slicknav.min.js"></script>
 <!--main js-->
 <script type="text/javascript" src="./js/main.js"></script>
 </body>

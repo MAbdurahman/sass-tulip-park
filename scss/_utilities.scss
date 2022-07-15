@@ -1,34 +1,12 @@
+
 /*=============================================
-          _utilities.scss
+          _utiliites.scss
 ================================================*/
-/* ================================================
-            Website Resets
-=================================================== */
-*,
-*::after,
-*::before {
+*, *::after, *::before{
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
 }
-
-*::-moz-focus-inner {
-  border: 0 !important;
-}
-
-*:focus {
-  outline: none !important;
-}
-
-
-/*=============================================
-          variables
-================================================*/
 $ff-primary: 'Poppins', sans-serif;
 $ff-secondary: 'Playfair Display', serif;
 
@@ -38,75 +16,124 @@ $clr-white: #ffffff;
 
 $margin-lg: 30px 0;
 $margin-sm: 0 0 15px;
-
 $padding-lg: 45px 0;
 $padding-sm: 15px 0;
 
-/*=============================================
-          common styles
-================================================*/
-body {
+$letter-spacing: 1px;
+
+body{
   // font-size: 16px;
   // font-family: $primaryFont;
   // font-weight: 300;
   font: {
-    size: 16px;
-    size: 100%;
+    size: 14px;
     family: $ff-primary;
     weight: 300;
   }
 }
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6{
   font: {
     family: $ff-secondary;
     weight: 700;
   }
   margin: $margin-sm;
+  line-height: 1.2em;
+  letter-spacing: $letter-spacing;
 }
-
-p {
+h2{
+  font-size: 75px;
+  strong{
+    color: $clr-primary;
+  }
+}
+h3{
+  font-size: 35px;
+  strong{
+    color: $clr-primary;
+  }
+}
+h4{
+  text-transform: uppercase;
+  font: {
+    family: $ff-primary;
+    size: 18px;
+  }
+  strong{
+    color: $clr-primary;
+  }
+}
+h5{
+  text-transform: uppercase;
+  font: {
+    family: $ff-primary;
+    size: 22px;
+  }
+  strong{
+    color: $clr-primary;
+  }
+}
+p{
   font: {
     family: $ff-primary;
     weight: 300;
   }
   margin: $margin-sm;
+  letter-spacing: $letter-spacing;
 }
-
-a {
+a{
   transition: 0.5s;
   text-decoration: none;
 }
-
-img {
+img{
   max-width: 100%;
   height: auto;
 }
-
-.content {
+.content{
   width: 100%;
-  max-width: 1320px;
-  max-width: 1280px;
+  max-width: 992px;
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
 }
-
-.inner {
+.inner{
+  //display: -webkit-box;
+  //display: -ms-flexbox;
+  //display: flex;
+  //-webkit-box-pack: justify;
+  //-ms-flex-pack: justify;
+  //justify-content: space-between;
   display: flex;
   justify-content: space-between;
-}
 
-.center {
+}
+.center{
   text-align: center;
 }
-
-.ul {
+.ul{
   margin: 0;
   padding: 0;
   list-style: none;
-
-  li {
+  li{
     display: inline-block;
+  }
+}
+.btn{
+  background: $clr-primary;
+  color: $clr-white;
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+  font: {
+    size: 16px;
+    weight: 600;
+  }
+  text: {
+    decoration: none;
+    transform: uppercase;
+  }
+  &:hover{
+    background: $clr-black;
   }
 }
