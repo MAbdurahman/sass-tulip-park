@@ -1,12 +1,12 @@
-
 /*=============================================
           _utiliites.scss
 ================================================*/
-*, *::after, *::before{
+*, *::after, *::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 $ff-primary: 'Poppins', sans-serif;
 $ff-secondary: 'Playfair Display', serif;
 
@@ -21,7 +21,9 @@ $padding-sm: 15px 0;
 
 $letter-spacing: 1px;
 
-body{
+$box-shadow: 0 0 10px #ddd;
+
+body {
   // font-size: 16px;
   // font-family: $primaryFont;
   // font-weight: 300;
@@ -31,7 +33,8 @@ body{
     weight: 300;
   }
 }
-h1, h2, h3, h4, h5, h6{
+
+h1, h2, h3, h4, h5, h6 {
   font: {
     family: $ff-secondary;
     weight: 700;
@@ -40,39 +43,48 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.2em;
   letter-spacing: $letter-spacing;
 }
-h2{
+
+h2 {
   font-size: 75px;
-  strong{
+
+  strong {
     color: $clr-primary;
   }
 }
-h3{
+
+h3 {
   font-size: 35px;
-  strong{
+
+  strong {
     color: $clr-primary;
   }
 }
-h4{
+
+h4 {
   text-transform: uppercase;
   font: {
     family: $ff-primary;
     size: 18px;
   }
-  strong{
+
+  strong {
     color: $clr-primary;
   }
 }
-h5{
+
+h5 {
   text-transform: uppercase;
   font: {
     family: $ff-primary;
-    size: 22px;
+    size: 16px;
   }
-  strong{
+
+  strong {
     color: $clr-primary;
   }
 }
-p{
+
+p {
   font: {
     family: $ff-primary;
     weight: 300;
@@ -80,44 +92,53 @@ p{
   margin: $margin-sm;
   letter-spacing: $letter-spacing;
 }
-a{
+
+a {
   transition: 0.5s;
   text-decoration: none;
 }
-img{
+
+img {
   max-width: 100%;
   height: auto;
 }
-.content{
+
+input, select {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.content {
   width: 100%;
   max-width: 992px;
   margin: 0 auto;
-  padding-left: 16px;
-  padding-right: 16px;
+  /*  padding-left: 16px;
+    padding-right: 16px;*/
 }
-.inner{
-  //display: -webkit-box;
-  //display: -ms-flexbox;
-  //display: flex;
-  //-webkit-box-pack: justify;
-  //-ms-flex-pack: justify;
-  //justify-content: space-between;
+
+.inner {
   display: flex;
   justify-content: space-between;
 
 }
-.center{
+
+.center {
   text-align: center;
 }
-.ul{
+
+.ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  li{
+
+  li {
     display: inline-block;
   }
 }
-.btn{
+
+.btn, input[type="submit"] {
   background: $clr-primary;
   color: $clr-white;
   display: inline-block;
@@ -133,7 +154,8 @@ img{
     decoration: none;
     transform: uppercase;
   }
-  &:hover{
+
+  &:hover {
     background: $clr-black;
   }
 }

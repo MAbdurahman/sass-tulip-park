@@ -1,0 +1,33 @@
+/*=============================================
+          _checkout-area.scss
+================================================*/
+#checkout_area{
+  position: relative;
+  margin-top: -65px;
+  .inner_checkout{
+    background: $clr-white;
+    padding: 16px 32px;
+    box-shadow: $box-shadow;
+    border-radius: 3px;
+  }
+  .child_checkout{
+    flex-basis: 23%;
+    i{
+      float: left;
+      padding-right: 10px;
+/*      padding-top: 6px;*/
+      padding-bottom: 8px;
+      font-size: 18px;
+    }
+    h5{
+      color: $clr-black;
+      font-size: 12px;
+      margin: 0 0 5px;
+      padding-top: 4px;
+    }
+    input[type="submit"]{
+      margin-top: 24px;
+      padding: 12px;
+    }
+  }
+}
