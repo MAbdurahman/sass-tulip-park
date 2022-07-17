@@ -125,6 +125,11 @@ input, select {
   /*  padding-left: 16px;
     padding-right: 16px;*/
 }
+.content-sm {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
 
 .inner {
   display: flex;

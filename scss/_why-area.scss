@@ -1,0 +1,25 @@
+/*=============================================
+          _why-area.scss
+================================================*/
+#why_area{
+  padding: $padding-sm;
+  .inner{
+    margin-top: 25px;
+  }
+  .child_why{
+    flex-basis: 30%;
+    background: $clr-white;
+    box-shadow: $box-shadow;
+    border-radius: 5px;
+    margin: 0 1%;
+    padding: 16px;
+    text-align: center;
+    p{
+      margin: 0;
+      margin-bottom: 4px;
+    }
+    img{
+      margin-bottom: 12px;
+    }
+  }
+}

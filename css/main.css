@@ -93,6 +93,12 @@ input, select {
     padding-right: 16px;*/
 }
 
+.content-sm {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
 .inner {
   display: flex;
   justify-content: space-between;
@@ -188,6 +194,7 @@ input, select {
 ================================================*/
 #main_menu {
   flex-basis: 78%;
+  padding-top: 8px;
 }
 #main_menu ul {
   text-align: right;
@@ -306,6 +313,32 @@ input, select {
 }
 #about_area h5 {
   margin: 0;
+}
+
+/*=============================================
+          _why-area.scss
+================================================*/
+#why_area {
+  padding: 15px 0;
+}
+#why_area .inner {
+  margin-top: 25px;
+}
+#why_area .child_why {
+  flex-basis: 30%;
+  background: #ffffff;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 5px;
+  margin: 0 1%;
+  padding: 16px;
+  text-align: center;
+}
+#why_area .child_why p {
+  margin: 0;
+  margin-bottom: 4px;
+}
+#why_area .child_why img {
+  margin-bottom: 12px;
 }
 
 /*# sourceMappingURL=main.css.map */
