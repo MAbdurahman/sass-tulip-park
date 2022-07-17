@@ -1,0 +1,18 @@
+/*=============================================
+          _about-area.scss
+================================================*/
+#about_area{
+  padding: $padding-lg;
+  padding-top: 32px;
+  img{
+    margin-right: 16px;
+  }
+  .inner_about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  h5{
+    margin: 0;
+  }
+}
