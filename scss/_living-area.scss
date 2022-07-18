@@ -1,0 +1,25 @@
+/*=============================================
+          _living-area.scss
+================================================*/
+#living_area {
+  padding: $padding-lg;
+  h5{
+    margin: 0;
+  }
+  .inner{
+    margin-top: 25px;
+  }
+  .child_living{
+    background: $clr-white;
+    box-shadow: $box-shadow;
+    border-radius: 3px;
+    flex-basis: 32%;
+    text-align: center;
+    img{
+      border-radius: 3px 3px 0 0;
+    }
+    .inner_living{
+      padding: 25px;
+    }
+  }
+}
