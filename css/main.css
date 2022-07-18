@@ -342,4 +342,30 @@ input, select {
   margin-bottom: 12px;
 }
 
+/*=============================================
+          _living-area.scss
+================================================*/
+#living_area {
+  padding: 45px 0;
+}
+#living_area h5 {
+  margin: 0;
+}
+#living_area .inner {
+  margin-top: 25px;
+}
+#living_area .child_living {
+  background: #ffffff;
+  box-shadow: 0 0 10px #ddd;
+  border-radius: 3px;
+  flex-basis: 32%;
+  text-align: center;
+}
+#living_area .child_living img {
+  border-radius: 3px 3px 0 0;
+}
+#living_area .child_living .inner_living {
+  padding: 25px;
+}
+
 /*# sourceMappingURL=main.css.map */
