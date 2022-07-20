@@ -173,3 +173,9 @@ input, select {
     background: $clr-black;
   }
 }
+.social_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

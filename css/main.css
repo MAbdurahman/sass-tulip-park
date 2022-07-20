@@ -135,6 +135,13 @@ input, select {
   background: #000000;
 }
 
+.social_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /*=============================================
           _header.scss
 ================================================*/
@@ -414,5 +421,40 @@ input, select {
   padding-top: 12px;
   font-size: 16px;
 }
+
+/*=============================================
+          _footer-area.scss
+================================================*/
+#footer_area {
+  padding: 45px 0;
+  background-color: #81c1f2;
+}
+#footer_area ul {
+  margin-bottom: 16px;
+}
+#footer_area ul li {
+  margin-right: 12px;
+}
+#footer_area ul a {
+  color: #ffffff;
+  background: #2493e9;
+  width: 35px;
+  height: 35px;
+  display: block;
+  text-align: center;
+  padding-top: 8px;
+  margin-right: 8px;
+}
+#footer_area ul a:hover {
+  background: #000000;
+}
+#footer_area .copyright_area p {
+  margin: 0;
+  font-weight: 600;
+}
+
+/*=============================================
+          _responsive.scss
+================================================*/
 
 /*# sourceMappingURL=main.css.map */

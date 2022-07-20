@@ -1,0 +1,37 @@
+/*=============================================
+          _footer-area.scss
+================================================*/
+#footer_area {
+  padding: $padding-lg;
+  background-color: lighten($clr-primary, 20%);
+
+   ul  {
+    //text-align: left;;
+     margin-bottom: 16px;
+    li {
+      margin-right: 12px;
+    }
+
+    a {
+      color: $clr-white;
+      background: $clr-primary;
+      width: 35px;
+      height: 35px;
+      display: block;
+      text-align: center;
+      padding-top: 8px;
+      margin-right: 8px;
+
+      &:hover {
+        background: $clr-black;
+      }
+    }
+  }
+
+  .copyright_area {
+    p {
+      margin: 0;
+      font-weight: 600;
+    }
+  }
+}
