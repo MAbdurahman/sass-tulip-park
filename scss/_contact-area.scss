@@ -1,0 +1,46 @@
+/*=============================================
+          _construct-area.scss
+================================================*/
+#contact_area{
+  position: relative;
+  iframe{
+    width: 100%;
+    height: 450px;
+    display: block;
+    border: 0;
+  }
+  .inner_contact{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .main_content{
+    background: $clr-white;
+    max-width: 450px;
+    max-width: 400px;
+    width: 100%;
+    /*padding: 30px;*/
+    padding: 24px 32px;
+    border-radius: 3px;
+    -webkit-box-shadow: 2px 7px 15px 3px rgba(0,0,0,0.47);
+    box-shadow: 2px 7px 15px 3px rgba(0,0,0,0.47);
+  }
+  h5{
+    margin: 0;
+  }
+  i{
+    margin-right: 8px;
+    background: $clr-primary;
+    color: $clr-white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 12px;
+    font-size: 16px;
+  }
+}
