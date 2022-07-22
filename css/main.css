@@ -8,7 +8,7 @@
 }
 
 body {
-  font-size: 14px;
+  font-size: 1rem;
   font-family: "Poppins", sans-serif;
   font-weight: 300;
 }
@@ -16,13 +16,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  margin: 0 0 15px;
-  line-height: 1.2em;
+  margin: 0 0 0.25em;
+  /*line-height: 1.2em;*/
+  line-height: 1.3;
   letter-spacing: 1px;
 }
 
 h1 {
-  font-size: 64px;
+  margin-top: 0;
+  font-size: 4rem;
 }
 h1 strong {
   color: #2493e9;
@@ -30,13 +32,14 @@ h1 strong {
 
 h2 {
   font-size: 40px;
+  font-size: 3rem;
 }
 h2 strong {
   color: #2493e9;
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 2.5rem;
 }
 h3 strong {
   color: #2493e9;
@@ -45,7 +48,8 @@ h3 strong {
 h4 {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  /*size: 18px;*/
+  font-size: 2rem;
 }
 h4 strong {
   color: #2493e9;
@@ -54,19 +58,30 @@ h4 strong {
 h5 {
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  /*size: 24px;*/
+  font-size: 1.5rem;
 }
 h5 strong {
   color: #2493e9;
 }
 
+h6 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.25rem;
+}
+h6 strong {
+  color: #2493e9;
+}
+
 p {
   font-family: "Poppins", sans-serif;
-  font-size: 11px;
+  font-size: 1rem;
   font-weight: 300;
-  margin: 0 0 15px;
+  margin: 0;
+  margin-bottom: 1.2em;
   letter-spacing: 1px;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 a {
@@ -89,6 +104,7 @@ input, select {
 .content {
   width: 100%;
   max-width: 992px;
+  max-width: 1320px;
   margin: 0 auto;
   /*  padding-left: 16px;
     padding-right: 16px;*/
@@ -96,7 +112,7 @@ input, select {
 
 .content-sm {
   width: 100%;
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -122,11 +138,11 @@ input, select {
   background: #2493e9;
   color: #ffffff;
   display: inline-block;
-  padding: 10px 20px;
-  margin-bottom: 15px;
+  padding: 0.75em 1.5em;
+  margin-bottom: 1em;
   transition: 0.5s;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   text-transform: uppercase;
@@ -140,6 +156,7 @@ input, select {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-right: -0.75em;
 }
 
 /*=============================================
@@ -151,33 +168,34 @@ input, select {
 #header_area .top_header {
   background: #2493e9;
   color: #ffffff;
-  padding: 15px 0;
+  padding-top: 0.75em;
+  padding-bottom: 0.75em;
 }
 #header_area .top_header .info {
   flex-basis: 33%;
 }
 #header_area .top_header .info p {
-  margin: 6px 0 0;
-  font-size: 14px;
+  margin: 0.5em 0 0;
+  font-size: 1rem;
   font-weight: 600;
 }
 #header_area .top_header .info i {
-  margin-right: 5px;
+  margin-right: 0.25em;
 }
 #header_area .top_header .info ul {
   text-align: right;
 }
 #header_area .top_header .info ul li {
-  margin-left: 8px;
+  margin-left: 0.75em;
 }
 #header_area .top_header .info ul a {
   background: #ffffff;
   color: #000000;
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
   display: block;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 0.5em;
 }
 #header_area .top_header .info ul a:hover {
   background: #000000;
@@ -187,8 +205,8 @@ input, select {
   margin: 0;
 }
 #header_area .main_header {
-  padding: 8px;
-  font-size: 10px;
+  padding: 1em;
+  font-size: 0.75rem;
 }
 #header_area .logo_area {
   flex-basis: 20%;
@@ -202,14 +220,14 @@ input, select {
 ================================================*/
 #main_menu {
   flex-basis: 78%;
-  padding-top: 8px;
+  padding-top: 0.75em;
 }
 #main_menu ul {
   text-align: right;
 }
 #main_menu ul li {
   position: relative;
-  margin-left: 15px;
+  margin-left: 1em;
 }
 #main_menu ul li::after {
   content: "";
@@ -240,11 +258,11 @@ input, select {
 }
 #main_menu ul li a {
   display: block;
-  padding: 10px 20px;
+  padding: 0.5em 1em;
   color: #000000;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 1rem;
 }
 #main_menu ul li a i {
   display: none;
@@ -267,7 +285,7 @@ input, select {
 }
 #hero_area .inner_hero p {
   width: 50%;
-  font-size: 11px;
+  font-size: 0.833rem;
 }
 
 /*=============================================
@@ -275,11 +293,11 @@ input, select {
 ================================================*/
 #checkout_area {
   position: relative;
-  margin-top: -65px;
+  margin-top: -64px;
 }
 #checkout_area .inner_checkout {
   background: #ffffff;
-  padding: 16px 32px;
+  padding: 1em 2em;
   box-shadow: 0 0 10px #ddd;
   border-radius: 3px;
 }
@@ -288,31 +306,34 @@ input, select {
 }
 #checkout_area .child_checkout i {
   float: left;
-  padding-right: 10px;
+  /*margin-bottom: -1em;*/
+  padding-right: 0.75em;
+  margin-top: 0.5em;
   /*      padding-top: 6px;*/
-  padding-bottom: 8px;
-  font-size: 18px;
+  /*padding-bottom: 0.25em;*/
+  font-size: 1.125rem;
 }
 #checkout_area .child_checkout h5 {
   color: #000000;
-  font-size: 12px;
-  margin: 0 0 5px;
-  padding-top: 4px;
+  font-size: 1.25rem;
+  margin: 0 0 0.25em;
+  padding-top: 0.25em;
 }
 #checkout_area .child_checkout input[type=submit] {
-  margin-top: 24px;
-  padding: 12px;
+  margin-top: 2.25em;
+  padding: 0.75em;
 }
 
 /*=============================================
           _about-area.scss
 ================================================*/
 #about_area {
-  padding: 45px 0;
-  padding-top: 32px;
+  padding: 3em 0;
+  /*padding-bottom: 3.5em;
+  padding-top: 2em;*/
 }
 #about_area img {
-  margin-right: 16px;
+  margin-right: 1.5em;
 }
 #about_area .inner_about {
   display: flex;
@@ -327,10 +348,10 @@ input, select {
           _why-area.scss
 ================================================*/
 #why_area {
-  padding: 15px 0;
+  /*padding: 0;*/
 }
 #why_area .inner {
-  margin-top: 25px;
+  margin-top: 2em;
 }
 #why_area .child_why {
   flex-basis: 30%;
@@ -338,28 +359,25 @@ input, select {
   box-shadow: 0 0 10px #ddd;
   border-radius: 5px;
   margin: 0 1%;
-  padding: 16px;
+  padding: 1em;
   text-align: center;
 }
 #why_area .child_why p {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 0.25em;
 }
 #why_area .child_why img {
-  margin-bottom: 12px;
+  margin-bottom: 0.75em;
 }
 
 /*=============================================
           _living-area.scss
 ================================================*/
 #living_area {
-  padding: 45px 0;
-}
-#living_area h5 {
-  margin: 0;
+  padding: 3em 0;
 }
 #living_area .inner {
-  margin-top: 25px;
+  margin-top: 1.5em;
 }
 #living_area .child_living {
   background: #ffffff;
@@ -372,7 +390,13 @@ input, select {
   border-radius: 3px 3px 0 0;
 }
 #living_area .child_living .inner_living {
-  padding: 25px;
+  padding: 1.5em;
+}
+#living_area .child_living .inner_living--title {
+  font-family: "Playfair Display", serif;
+}
+#living_area .child_living .inner_living--sub-title {
+  margin-bottom: 0.75em;
 }
 
 /*=============================================
@@ -383,14 +407,15 @@ input, select {
 }
 #contact_area iframe {
   width: 100%;
-  height: 450px;
+  /*height: 450px;*/
+  min-height: 450px;
   display: block;
   border: 0;
 }
 #contact_area .inner_contact {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 3%;
+  left: 2%;
   width: 100%;
   height: 100%;
   display: flex;
@@ -398,11 +423,10 @@ input, select {
 }
 #contact_area .main_content {
   background: #ffffff;
-  max-width: 450px;
-  max-width: 400px;
+  max-width: 480px;
   width: 100%;
   /*padding: 30px;*/
-  padding: 24px 32px;
+  padding: 1.5em 2em;
   border-radius: 3px;
   -webkit-box-shadow: 2px 7px 15px 3px rgba(0, 0, 0, 0.47);
   box-shadow: 2px 7px 15px 3px rgba(0, 0, 0, 0.47);
@@ -411,46 +435,49 @@ input, select {
   margin: 0;
 }
 #contact_area i {
-  margin-right: 8px;
+  margin-right: 0.5em;
   background: #2493e9;
   color: #ffffff;
   width: 40px;
   height: 40px;
   border-radius: 50%;
   text-align: center;
-  padding-top: 12px;
-  font-size: 16px;
+  padding-top: 0.75em;
+  font-size: 1em;
 }
 
 /*=============================================
           _footer-area.scss
 ================================================*/
 #footer_area {
-  padding: 45px 0;
-  background-color: #81c1f2;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #2493e9;
 }
 #footer_area ul {
-  margin-bottom: 16px;
+  margin-bottom: 1em;
 }
 #footer_area ul li {
-  margin-right: 12px;
+  margin-right: 0.75em;
 }
 #footer_area ul a {
-  color: #ffffff;
-  background: #2493e9;
+  color: #000000;
+  background: #ffffff;
   width: 35px;
   height: 35px;
   display: block;
   text-align: center;
-  padding-top: 8px;
-  margin-right: 8px;
+  padding-top: 0.5em;
+  margin-right: 0.5em;
 }
 #footer_area ul a:hover {
   background: #000000;
+  color: #ffffff;
 }
 #footer_area .copyright_area p {
   margin: 0;
   font-weight: 600;
+  color: #ffffff;
 }
 
 /*=============================================

@@ -2,28 +2,30 @@
           _footer-area.scss
 ================================================*/
 #footer_area {
-  padding: $padding-lg;
-  background-color: lighten($clr-primary, 20%);
+  padding-top: 2em;
+  padding-bottom: 2em;
+  //background-color: lighten($clr-primary, 20%);
+  background-color: $clr-primary;
 
    ul  {
-    //text-align: left;;
-     margin-bottom: 16px;
+     margin-bottom: 1em;
     li {
-      margin-right: 12px;
+      margin-right: 0.75em;
     }
 
     a {
-      color: $clr-white;
-      background: $clr-primary;
+      color: $clr-black;
+      background: $clr-white;
       width: 35px;
       height: 35px;
       display: block;
       text-align: center;
-      padding-top: 8px;
-      margin-right: 8px;
+      padding-top: 0.5em;
+      margin-right: 0.5em;
 
       &:hover {
         background: $clr-black;
+        color: $clr-white;
       }
     }
   }
@@ -32,6 +34,7 @@
     p {
       margin: 0;
       font-weight: 600;
+      color: $clr-white;
     }
   }
 }

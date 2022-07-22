@@ -2,9 +2,9 @@
           _why-area.scss
 ================================================*/
 #why_area{
-  padding: $padding-sm;
+  /*padding: 0;*/
   .inner{
-    margin-top: 25px;
+    margin-top: 2em;
   }
   .child_why{
     flex-basis: 30%;
@@ -12,14 +12,14 @@
     box-shadow: $box-shadow;
     border-radius: 5px;
     margin: 0 1%;
-    padding: 16px;
+    padding: 1em;
     text-align: center;
     p{
       margin: 0;
-      margin-bottom: 4px;
+      margin-bottom: 0.25em;
     }
     img{
-      margin-bottom: 12px;
+      margin-bottom: 0.75em;
     }
   }
 }

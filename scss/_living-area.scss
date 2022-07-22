@@ -3,11 +3,9 @@
 ================================================*/
 #living_area {
   padding: $padding-lg;
-  h5{
-    margin: 0;
-  }
+
   .inner{
-    margin-top: 25px;
+    margin-top: 1.5em;
   }
   .child_living{
     background: $clr-white;
@@ -19,7 +17,13 @@
       border-radius: 3px 3px 0 0;
     }
     .inner_living{
-      padding: 25px;
+      padding: 1.5em;
+      &--title {
+        font-family: $ff-secondary;
+      }
+      &--sub-title {
+        margin-bottom: 0.75em;
+      }
     }
   }
 }
