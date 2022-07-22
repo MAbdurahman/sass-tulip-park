@@ -1,3 +1,24 @@
 /*=============================================
           _responsive.scss
 ================================================*/
+@media only screen and (max-width: 1036px) {
+  html {
+    font-size: 83.3333%;
+    overflow-x: hidden;
+  }
+  .content {
+    max-width: 992px;
+  }
+  #checkout_area {
+    margin-top: -2.5em;
+  }
+
+div.child_contact.content{
+    position: relative;
+    top: 5%;
+    left: 8%;
+  }
+
+}
+
+
