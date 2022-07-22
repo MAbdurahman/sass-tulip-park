@@ -7,38 +7,39 @@
   .top_header {
     background: $clr-primary;
     color: $clr-white;
-    padding: $padding-sm;
+    padding-top: .75em;
+    padding-bottom: .75em;
 
     .info {
       flex-basis: 33%;
 
       p {
-        margin: 6px 0 0;
+        margin: .5em 0 0;
         font: {
-          size: 14px;
+          size: 1rem;
           weight: 600;
         }
       }
 
       i {
-        margin-right: 5px;
+        margin-right: .25em;
       }
 
       ul {
         text-align: right;
 
         li {
-          margin-left: 8px;
+          margin-left: 0.75em;
         }
 
         a {
           background: $clr-white;
           color: $clr-black;
-          width: 35px;
-          height: 35px;
+          width: 40px;
+          height: 40px;
           display: block;
           text-align: center;
-          padding-top: 8px;
+          padding-top: 0.5em;
 
           &:hover {
             background: $clr-black;
@@ -54,8 +55,8 @@
   }
 
   .main_header {
-    padding: 8px;
-    font-size: 10px;
+    padding: 1em;
+    font-size: 0.75rem;
   }
 
   .logo_area {

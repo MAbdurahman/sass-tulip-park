@@ -1,0 +1,40 @@
+/*=============================================
+          _footer-area.scss
+================================================*/
+#footer_area {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  //background-color: lighten($clr-primary, 20%);
+  background-color: $clr-primary;
+
+   ul  {
+     margin-bottom: 1em;
+    li {
+      margin-right: 0.75em;
+    }
+
+    a {
+      color: $clr-black;
+      background: $clr-white;
+      width: 35px;
+      height: 35px;
+      display: block;
+      text-align: center;
+      padding-top: 0.5em;
+      margin-right: 0.5em;
+
+      &:hover {
+        background: $clr-black;
+        color: $clr-white;
+      }
+    }
+  }
+
+  .copyright_area {
+    p {
+      margin: 0;
+      font-weight: 600;
+      color: $clr-white;
+    }
+  }
+}
