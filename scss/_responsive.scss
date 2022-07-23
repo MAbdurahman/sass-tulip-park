@@ -13,7 +13,7 @@
     margin-top: -2.5em;
   }
 
-div.child_contact.content{
+  div.child_contact.content {
     position: relative;
     top: 5%;
     left: 8%;
@@ -21,4 +21,136 @@ div.child_contact.content{
 
 }
 
+@media only screen and (min-width: 200px) and (max-width: 800px) {
+  html {
+    font-size: 75%;
+  }
+  .content {
+    width: 92%;
+  }
+  #header_area .top_header {
+    display: none;
 
+  }
+
+  #header_area .logo_area {
+    flex-basis: 100%;
+    text-align: center;
+
+    img {
+      margin: 0 auto;
+      margin-top: 7.5em;
+    }
+  }
+
+  #main_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: $clr-primary;
+    padding: 0;
+
+    ul {
+      text-align: center;
+
+      li {
+        margin: 0 1%;
+
+        &:last-child {
+          display: none;
+        }
+
+        a {
+          font-size: 1.5rem;
+          color: $clr-white;
+          padding: .75em;
+
+          i {
+            display: block;
+            margin-bottom: 4px;
+          }
+
+          &:hover {
+            background-color: $clr-black;
+          }
+        }
+      }
+    }
+  }
+
+  #hero_area {
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    p {
+      display: none;
+    }
+
+    a {
+      margin: 0;
+    }
+  }
+
+  #about_area{
+    .inner{
+      flex-direction: row;
+      justify-content:space-between;
+    }
+    img{
+      width: 50%;
+      /*margin-right: 0*/;
+      /*margin-bottom: 15px;*/
+    }
+  }
+
+  #why_area {
+    .content-sm {
+      width: 90%;
+    }
+    .inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+
+    }
+  }
+
+  #living_area {
+    .inner_living--title {
+      letter-spacing: 2px;
+    }
+  }
+
+  #footer_area {
+    ul a {
+      padding-top: 0.75em;
+    }
+  }
+}
+
+
+/*Desktop First Common Breakpoints*/
+
+/*tablet landscape and desktop layout (960px or more) */
+@media only screen and (min-width: 960px) {
+  /*...tablet landscape and desktop styles */
+}
+
+/*table portrait layout (768px to 959px) */
+@media only screen and (max-width: 959px) {
+  /*... tablet portrait styles */
+}
+
+/*mobile landscape layout (480px to 767px) */
+@media only screen and (max-width: 767px) {
+  /*...mobile landscape styles */
+}
+
+/*mobile portrait layout (479px or less) */
+@media only screen and (max-width: 479px) {
+  /*...mobile portrait styles */
+}
