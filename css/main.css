@@ -614,9 +614,17 @@ input, select {
   }
   #checkout_area .child_checkout {
     margin-bottom: 15px;
+    width: 100%;
+    max-width: 480px;
   }
   #checkout_area .child_checkout:last-child {
     margin-bottom: 0;
+  }
+  #checkout_area .child_checkout input[type=date],
+#checkout_area .child_checkout select,
+#checkout_area .child_checkout input[type=submit] {
+    width: 100%;
+    max-width: 480px;
   }
   #checkout_area .child_checkout input[type=submit] {
     margin-top: 0;
@@ -671,10 +679,6 @@ input, select {
   #contact_area .child_contact .main_content {
     max-width: 480px;
   }
-  /*.main_content {
-    width: 100vw;
-    max-width: 100vw;
-  }*/
 }
 @media only screen and (max-width: 324px) {
   #header_area #main_menu ul li a {
