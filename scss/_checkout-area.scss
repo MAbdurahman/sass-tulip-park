@@ -12,6 +12,7 @@
   }
   .child_checkout{
     flex-basis: 23%;
+    -ms-flex-preferred-size: 23%;
     i{
       float: left;
       /*margin-bottom: -1em;*/
